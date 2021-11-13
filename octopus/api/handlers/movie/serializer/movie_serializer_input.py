@@ -1,0 +1,2 @@
+class MovieSerializerInput:
+    pass
