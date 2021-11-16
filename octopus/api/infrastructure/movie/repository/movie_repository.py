@@ -7,8 +7,6 @@ from api.models.movie_model import MovieModel
 
 
 class MovieRepository(MovieRepositoryInterface):
-    def __init__(self):
-        super().__init__()
 
     def create(self, movie: MovieEntity):
         created_movie_model = MovieModel.objects.create(
