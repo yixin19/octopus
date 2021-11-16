@@ -8,8 +8,6 @@ from api.infrastructure.movie.repository.movie_repository import MovieRepository
 
 
 class MovieController(APIView):
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
 
     def setup(self, request, *args, **kwargs):
         super().setup(request, *args, **kwargs)

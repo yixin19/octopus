@@ -7,14 +7,14 @@ from api.models.movie_model import MovieModel
 
 
 class MovieRepository(MovieRepositoryInterface):
-    def __init__(self):
-        super().__init__()
 
-    def create(self, movie: MovieEntity):
+    @staticmethod
+    def create(movie: MovieEntity):
         created_movie_model = MovieModel.objects.create(
             title=movie.title, release_date=movie.release_date
         )
         return MovieMapper.map_to_entity(created_movie_model)
 
-    def get_all_movies(self) -> list[MovieEntity]:
+    @staticmethod
+    def get_all_movies() -> list[MovieEntity]:
         return []
