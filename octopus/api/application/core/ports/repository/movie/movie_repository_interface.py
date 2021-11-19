@@ -4,10 +4,12 @@ from api.application.core.domain.movie.movie_entity import MovieEntity
 
 
 class MovieRepositoryInterface(ABC):
+    @staticmethod
     @abstractmethod
-    def create(self, movie: MovieEntity):
+    def create(movie: MovieEntity):
         raise NotImplementedError
 
+    @staticmethod
     @abstractmethod
     def get_all_movies(self) -> list[MovieEntity]:
         raise NotImplementedError
