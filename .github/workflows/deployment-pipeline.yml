@@ -1,12 +1,7 @@
 ---
-name: Frontend Deployment
+name: Backend deployment
 on:
   workflow_dispatch:
-    inputs:
-      env_code:
-        description: 'In which environment you want to deploy. Possible value: d, q, p'
-        required: true
-        default: 'd'
   push:
 
 jobs:
