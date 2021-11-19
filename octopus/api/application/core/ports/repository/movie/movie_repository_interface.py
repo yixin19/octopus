@@ -11,5 +11,5 @@ class MovieRepositoryInterface(ABC):
 
     @staticmethod
     @abstractmethod
-    def get_all_movies(self) -> list[MovieEntity]:
+    def get_all_movies() -> list[MovieEntity]:
         raise NotImplementedError

@@ -4,10 +4,12 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-django = "*"
+django = "==3.2.*"
 djangorestframework = "==3.12.*"
 
 [dev-packages]
+coverage = "*"
+django-debug-toolbar = "*"
 
 [requires]
 python_version = "3.9"
